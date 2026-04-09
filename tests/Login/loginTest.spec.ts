@@ -1,6 +1,6 @@
 import{test,expect} from "@playwright/test";
 import { LoginAction } from "../../src/action/loginAction"; 
-import loginData  from  "../../src/testdata/login.json";
+import loginData  from "../../src/testdata/login.json";
 
 test.beforeEach(async ({page})=>{
     await page.goto(loginData.baseURL);
