@@ -5,7 +5,7 @@ import loginData  from "../../src/testdata/login.json";
 test.beforeEach(async ({page})=>{
     await page.goto(loginData.baseURL);
 });
-test('TC01:Verify user can login with valid credentials',async({page})=>{
+test('TC01:Verify user can login with valid credential',async({page})=>{
     const loginAction=new LoginAction(page);
     await loginAction.login(loginData.validUser.username, loginData.validUser.password);
     await expect(page).toHaveTitle('Swag Labs');
